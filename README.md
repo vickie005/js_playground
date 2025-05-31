@@ -159,3 +159,67 @@ SCOPE => limits where a variable exists. Any variable created inside the curly b
 
  AUTO-BOXING - eg. console.log('hello'.length);
                    console.log('hello'.toUpperCase);
+
+Document Object Model(DOM) => it is another built-in object called document object that is linked to the webpage. (It represents or models the  page)
+syntax:
+    document.body.innerHTML = 'hello';
+    document.title = 'Good job!'
+-DOM combines JS and HTML together. The HTML element is converted into a JS object. Gives JS full controll of the webpage.
+
+*document.querySelector => lets us get any element from the page and puts it inside javascript.
+*Block element => takes up an entire line by itself.
+NOTE: Whenever we get a value from the DOM, the value will be a string.
+
+onKeydown => runs JS when we press a key on our keyboard.
+EVENTS: clicks, keydowns....
+EVENT LISTENERS: onclick - click
+                 onkeydown - key press
+                 onscroll - scrolling
+                 onmouseenter - hovering over
+                 onmouseleave - stop hovering over
+Window object => represents the browser.
+add() => adds a class to an element.
+
+## arrays ##
+
+-They represent a list of values.
+Index - position of the array.
+
+ ### properties of arrays ###
+
+.length => tells us how many values are in an array.
+Methods:
+.push => adds a value at the end of the array.
+.splice => removes a value from the array. Takes two values:
+    1. Index we want to remove.
+    2. Number of values to remove.
+
+LOOPS => lets us run some code over and over.
+-They include the for loop, while loop and forEach loop.
+syntax 1:
+    let i =1;                           =>loop variable
+
+    while (i <= 5) {                    [loop body
+        console.log(i);                  ]
+        i++                             => increment step  (makes sure the loop ends at some point)            
+    }
+
+syntax 2:
+    for (let i = 1;i <= 5;i ++) {
+        console.log (i);
+    }
+
+*break => exits a loop early.
+*continue => skips 1 iteration.
+-forEach loop doesn't have 'continue' but we can use 'return' to do the same thing. It also doesn't have break.
+setTimeOut => A built-in function with 2 parameters:
+    1. function we want to run in the future.
+    2. how long to wait before running the function. (a number in millisecond (1000ms = 1sec))
+Asynchronous code: The computer won't wait for a line to finush before going to the next one. The opposite is Synchronous code.
+setInterval(); => will keep running a function in the future.
+
+ARROW FUNCTION => A shorter way to write functions.
+.addEventListener() =>lets us run some code when we interact with the element.
+.removeEventListener() => removes eventListener.
+
+
